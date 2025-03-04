@@ -8,7 +8,7 @@ export default function metaheader(
 ) {
   const title = titleInit
     ? titleInit
-    : "June Laundry.";
+    : "June Laundry";
 
   const description = descriptionInit
     ? descriptionInit
