@@ -15,6 +15,7 @@ export default function Home() {
           <h1 className="text-3xl font-semibold mt-6 text-gray-100 animate-pulse sr-only">
             Tsingshui Holdings
           </h1>
+           <h2>Coming Soon</h2>
         </div>
       </main>
   );
