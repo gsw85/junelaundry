@@ -6,14 +6,14 @@ import { IoLogoWhatsapp } from "react-icons/io";
 export const NavRightSection = () => (
   <>
     <div className="hidden sm:ml-6 sm:block">
-      <div className="flex items-center justify-center space-x-4">
+      <div className="flex items-center justify-center space-x-2 lg:space-x-4">
         <a
           href={`https://maps.app.goo.gl/5oBtafte3rqV8u376`}
           className={`flex items-center justify-center space-x-1 text-sm hover:text-yellow-500`}
           target={"_blank"}
         >
           <MapPinIcon className={`size-5`} />
-          <span>Locate us</span>
+          <span className={`lg:block hidden`}>Locate us</span>
         </a>
         <a
           href={`https://api.whatsapp.com/send/?phone=%2B60176952350&text=Hello,%20I%20am%20looking%20for%20Dry%20Cleaning%20or%20Laundry%20Services&type=phone_number&app_absent=0`}
@@ -21,7 +21,7 @@ export const NavRightSection = () => (
           target={"_blank"}
         >
           <IoLogoWhatsapp className={`size-5 text-green-500`} />
-          <span>WhatsApp</span>
+          <span className={"lg:block hidden"}>WhatsApp</span>
         </a>
       </div>
     </div>
