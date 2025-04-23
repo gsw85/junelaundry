@@ -3,7 +3,7 @@ export default function ComingSoon({
   hasTopMenu = false,
   customHeight = "",
 }) {
-  let height = `xl:h-[calc(100vh)] h-[calc(100vh-64px)]`;
+  let height = `h-[calc(100vh)]`;
   if (hasTopMenu) height = `h-[calc(100vh-64px)]`;
   if (hasFooter) height = `h-[calc(100vh-64px)] xl:h-[calc(100vh-474px)]`;
   if (hasFooter && hasTopMenu)
