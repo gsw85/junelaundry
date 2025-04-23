@@ -12,7 +12,7 @@ export default function ComingSoon({
   if (customHeight) height = customHeight;
 
   return (
-    <div className={`flex flex-col items-center justify-center ${height}`}>
+    <div className={`flex flex-col items-center justify-center px-4 ${height}`}>
       <h2 className="mb-8 animate-pulse text-5xl font-bold text-white">
         Coming Soon
       </h2>
