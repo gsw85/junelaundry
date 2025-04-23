@@ -4,12 +4,7 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
 } from "@headlessui/react";
-import { BellIcon } from "@heroicons/react/24/outline";
 import { NavLeftSection } from "./nav-left-section";
 import { NavRightSection } from "./nav-right-section";
 import { menuItems } from "@/components/layout/menu-items";
