@@ -9,14 +9,28 @@ import NavLeftSection from "./nav-left-section";
 import { NavRightSection } from "./nav-right-section";
 import { ActivMenuLink, menuItems } from "./nav-menu-items";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function TopNav() {
   const router = useRouter();
 
+  const [atTop, setAtTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setAtTop(window.scrollY < 10);
+    };
+
+    handleScroll(); // Check on mount
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <Disclosure
       as="nav"
-      className="bg-black md:bg-transparent fixed top-0 left-0 right-0 z-50"
+      className={`bg-black fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${atTop ? `md:bg-transparent` : `md:bg-black`}`}
     >
       {({ open, close }) => (
         <>

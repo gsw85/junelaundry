@@ -4,7 +4,7 @@ export default function NavLeftSection({ close }) {
   const router = useRouter();
 
   return (
-    <div className="shrink-0">
+    <div className="shrink-0 h-full flex items-center">
       <button
         onClick={async () => {
           await router.push("/");
