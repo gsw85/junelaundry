@@ -45,13 +45,17 @@ export default function TopNav() {
               <DisclosureButton
                 as="div"
                 key={obj.name}
-                className="hover:bg-yellow-500/10 rounded-md py-2 group cursor-pointer"
+                className="hover:bg-yellow-500/10 rounded-md py-1 group cursor-pointer"
                 onClick={async () => {
                   await router.push(obj.href);
                   close();
                 }}
               >
-                <ActivMenuLink isLink={false} href={obj.href}>
+                <ActivMenuLink
+                  navCss={`font-medium p-2`}
+                  isLink={false}
+                  href={obj.href}
+                >
                   {obj.name}
                 </ActivMenuLink>
               </DisclosureButton>
