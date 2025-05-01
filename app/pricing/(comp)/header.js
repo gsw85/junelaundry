@@ -30,7 +30,7 @@ export default function Header() {
               key={service.name}
               onClick={() => setSelectedService(service)}
               href={`/pricing?services=${service.param}`}
-              className={`flex items-center py-4 cursor-pointer border-2 border-transparent ${selectedService.name === service.name ? "border-b-black" : "hover:text-gray-700"}`}
+              className={`flex items-center py-4 cursor-pointer outline-0 border-2 border-transparent ${selectedService.name === service.name ? "border-b-black" : "hover:text-gray-700"}`}
             >
               {service.name}
             </Link>
