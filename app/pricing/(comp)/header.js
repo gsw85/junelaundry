@@ -8,13 +8,14 @@ export default function Header() {
   const [selectedService, setSelectedService] = useState(services[0]);
 
   return (
-    <div className={`mt-16 bg-gray-100 sticky top-16 z-50`}>
+    <div className={`mt-16 bg-gray-100 sticky top-16 z-10`}>
       <div
         className={`w-full mx-auto max-w-7xl px-4 md:px-6 lg:px-8 text-black`}
       >
         <nav className={`flex space-x-4 sm:space-x-6 font-semibold sm:text-lg`}>
           {services.map((service) => (
             <button
+              key={service}
               onClick={() => setSelectedService(service)}
               className={`flex items-center py-4 cursor-pointer border-2 border-transparent ${selectedService === service ? "border-b-black" : "hover:text-gray-700"}`}
             >

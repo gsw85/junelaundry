@@ -30,7 +30,7 @@ export default function TopNav() {
   return (
     <Disclosure
       as="nav"
-      className={`bg-black fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${atTop ? `md:bg-transparent` : `md:bg-black`}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${atTop ? `md:bg-transparent` : `bg-linear-to-t from-transparent via-black/50 to-black`}`}
     >
       {({ open, close }) => (
         <>
