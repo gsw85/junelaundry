@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 
 export const menuItems = [
   { name: "Services and Pricing", href: "/pricing" },
-  { name: "Subscription", href: "/subscription" },
-  { name: "Partner", href: "/partner" },
+  // { name: "Subscription", href: "/subscription" },
+  // { name: "Partner", href: "/partner" },
 ];
 
 export function ActivMenuLink({

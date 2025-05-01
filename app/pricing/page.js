@@ -5,7 +5,6 @@ export default function Page() {
   return (
     <main>
       <Header />
-      <div className={`bg-white h-96`}></div>
       <Footer />
     </main>
   );

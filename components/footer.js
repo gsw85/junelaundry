@@ -1,5 +1,3 @@
-import { IoLogoGoogle } from "react-icons/io5";
-
 const navigation = [
   {
     name: "Facebook",
@@ -60,7 +58,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-center text-sm/6 text-gray-400 md:order-1 md:mt-0">
-          &copy; ${new Date().getFullYear()} June Laundry. All rights reserved.
+          &copy; {new Date().getFullYear()} June Laundry. All rights reserved.
         </p>
       </div>
     </footer>
