@@ -104,4 +104,18 @@ export const wetWashingList = [
     price: `RM 8.00 / kg`,
     others: "",
   },
+  {
+    name: "Military / Army Uniform",
+    imageSrc:
+      "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/721138e5-ae72-4991-0955-be92cd117100/S",
+    price: `RM 27.00 / set`,
+    others: "",
+  },
+  {
+    name: "Tentera Darat (~Pakaian No. 3) Uniform",
+    imageSrc:
+      "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/24c1e784-4774-443e-237c-d1801b58ca00/S",
+    price: `RM 27.00 / set`,
+    others: "",
+  },
 ];

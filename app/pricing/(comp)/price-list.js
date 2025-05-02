@@ -22,7 +22,7 @@ export default function PriceList({ products }) {
                 <h4 className="text-sm text-gray-700">{product.name}</h4>
                 <p className="mt-1 text-sm text-gray-500">{product.others}</p>
               </div>
-              <p className="text-sm font-medium text-gray-900">
+              <p className="text-sm font-medium text-gray-900 shrink-0">
                 {product.price}
               </p>
             </div>
