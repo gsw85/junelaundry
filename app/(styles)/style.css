@@ -1,0 +1,75 @@
+/* ===== Scrollbar CSS ===== */
+/*hide scroll bar*/
+*::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/*For page-loading*/
+.preloading_ring{
+    /*position: absolute;*/
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: preloading_ring 500ms linear infinite;
+}
+@keyframes preloading_ring {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+}
+.preloading_ring:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,255,255,.3);
+}
+
+.preloading_span{
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: preloading_text 3s ease-in-out infinite;
+}
+
+@keyframes preloading_text {
+    50%{
+        color: black;
+    }
+}
+
+/* HTML: <div class="loader"></div> */
+.progress_loader {
+    width: 120px;
+    height: 20px;
+    border-radius: 20px;
+    background:
+            repeating-linear-gradient(135deg,#f03355 0 10px,#ffa516 0 20px) 0/0%   no-repeat,
+            repeating-linear-gradient(135deg,#ddd    0 10px,#eee    0 20px) 0/100%;
+    animation: progress_loader_frame 2s infinite;
+}
+@keyframes progress_loader_frame {
+    100% {background-size:100%}
+}

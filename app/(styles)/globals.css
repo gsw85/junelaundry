@@ -57,8 +57,3 @@ body {
 }
 
 
-/* ===== Scrollbar CSS ===== */
-/*hide scroll bar*/
-*::-webkit-scrollbar{
-  display: none;
-}

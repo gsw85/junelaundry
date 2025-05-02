@@ -100,7 +100,8 @@ export default function ZDryClean() {
             <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
               <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:-m-4 lg:rounded-2xl lg:p-4">
                 <img
-                  alt="App screenshot"
+                  alt="June Laundry Dry Cleaning"
+                  title={`June Laundry Dry Cleaning`}
                   src={urlConvert(
                     "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/b1a2cfb9-abae-4317-268c-86d6458b5a00/public",
                   )}

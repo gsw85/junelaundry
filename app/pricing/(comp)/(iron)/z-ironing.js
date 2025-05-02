@@ -2,45 +2,46 @@ import Link from "next/link";
 import { urlConvert } from "@/util/img-fire-convert";
 import HowSteps from "@/app/pricing/(comp)/how-steps";
 import { PiMagnifyingGlassLight, PiWashingMachine } from "react-icons/pi";
-import { MdCallSplit, MdOutlineDryCleaning } from "react-icons/md";
-import { RiShirtLine } from "react-icons/ri";
 import PriceList from "@/app/pricing/(comp)/price-list";
-import { wetWashingList } from "@/app/pricing/(comp)/(wet-washing)/z-wash-list";
+import { ironList } from "./iron-list";
+import { MdCallSplit, MdOutlineIron } from "react-icons/md";
+import { RiShirtLine } from "react-icons/ri";
+import { FaListCheck } from "react-icons/fa6";
 
-const weWashSteps = [
+const ironPressSteps = [
   {
-    icon: PiMagnifyingGlassLight,
+    icon: PiMagnifyingGlassLight, // From phosphor icons
     name: "Inspect",
     detail:
-      "We do pocket inspections for you, ensuring nothing ends up in the wash that shouldn’t. Every pocket and garment is checked before washing.",
+      "Each garment is checked for fabric type, special care labels, and pressing needs before we begin.",
   },
   {
-    icon: MdCallSplit,
-    name: "Sort",
+    icon: MdCallSplit, // From Material Design
+    name: "Sort & Prep",
     detail:
-      "Lights and darks are separated, and all clothes are washed in cold water to protect colors and fabric quality.",
+      "Items are sorted by fabric and prepared using light misting or pre-steam if needed to loosen wrinkles gently.",
   },
   {
-    icon: PiWashingMachine,
-    name: "Wash",
+    icon: MdOutlineIron, // From Material Design
+    name: "Steam Iron",
     detail:
-      "We use high-performance machines and the right detergent for your clothes. Every load is washed with care based on fabric type and soil level.",
+      "We use commercial steam irons with built-in boilers to apply the right heat and pressure for each fabric, restoring shape and removing wrinkles.",
   },
   {
-    icon: MdOutlineDryCleaning,
-    name: "Dry",
+    icon: RiShirtLine, // From Tabler Icons
+    name: "Shape & Finish",
     detail:
-      "Big items like comforters and curtains are hang-dried to avoid heat damage. Others are tumble-dried at the right temperature to ensure they're fully dry and safe.",
+      "Shirts are shaped with crisp collars, pants are creased sharply, and delicate fabrics are gently smoothed for a neat finish.",
   },
   {
-    icon: RiShirtLine,
-    name: "Fold",
+    icon: FaListCheck, // From Remix Icons
+    name: "Final Touch",
     detail:
-      "Every piece is neatly folded and packed, ready for your closet. Shirts, pants, and even socks are folded with care to keep your laundry looking fresh.",
+      "After pressing, every piece is inspected again and returned on a hanger, looking polished and ready to wear.",
   },
 ];
 
-export default function ZWetWash() {
+export default function ZIroning() {
   return (
     <>
       <div className="relative isolate overflow-hidden bg-white">
@@ -70,19 +71,19 @@ export default function ZWetWash() {
         <div className="mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:px-8 lg:py-32">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:shrink-0 lg:pt-8">
             <h2 className="mt-10 text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-7xl">
-              Wash, Dry and Fold
+              Iron and Press
             </h2>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-              Wash & Fold is the perfect service to use if you want to avoid
-              doing laundry and save your time and your sanity.
+              For garments that need a smooth, polished finish — freshly pressed
+              and ready to wear.
             </p>
             <p className={`mt-3 text-gray-500 font-normal`}>
-              We offer professional wet wash using clean, fabric-safe water and
-              high-performance commercial machines. Your clothes are washed with
-              care — not just cleaned, but protected — using gentle cycles,
-              quality detergents, and temperature control that preserves fabric
-              life and color. It’s just like a premium hand wash, only better
-              and faster.
+              We use commercial steam irons with built-in boilers to deliver
+              consistent heat and steam, ensuring every garment is pressed with
+              care. Each item is inspected and handled according to its fabric
+              type — whether it’s creating sharp creases for trousers or
+              smoothing out delicate materials. The result is a crisp, polished
+              look that’s safe on all fabrics and ready to wear.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <Link
@@ -97,20 +98,20 @@ export default function ZWetWash() {
             <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
               <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:-m-4 lg:rounded-2xl lg:p-4">
                 <img
-                  alt="June Laundry Wet Washing"
-                  title={`June Laundry Wet Washing`}
+                  alt="June Laundry Ironing and Press"
+                  title={`June Laundry Ironing and Press`}
                   src={urlConvert(
-                    "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/eb0541c1-73f3-4ac4-475d-b4ea92183400/public",
+                    "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/6418b05e-2855-4aa2-f3da-c28995d21a00/public",
                   )}
-                  className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10 h-[600px] object-right lg:object-top-right object-cover"
+                  className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10 h-[600px] object-right lg:object-bottom-right object-cover"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <HowSteps serviceSteps={weWashSteps} />
-      <PriceList products={wetWashingList} />
+      <HowSteps serviceSteps={ironPressSteps} />
+      <PriceList products={ironList} />
     </>
   );
 }
