@@ -1,11 +1,11 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
 
 const includedFeatures = [
-  "Home pickup and reinstallation included",
-  "Professional cleaning with fabric-safe methods",
-  "Handled by trained staff",
-  "Hassle-free scheduling via WhatsApp",
-  "Available on Penang Island only",
+  "Pickup and reinstallation",
+  "Fabric-safe cleaning",
+  "Trained staff",
+  "Easy booking on WhatsApp",
+  "Penang Island only",
 ];
 
 export default function CurtainPrice() {
