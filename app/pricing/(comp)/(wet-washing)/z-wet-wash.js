@@ -47,6 +47,7 @@ export default function ZWetWash() {
         subtitle={`Wash & Fold is the perfect service to use if you want to avoid doing laundry and save your time and your sanity.`}
         desc={`We offer professional wet wash using clean, fabric-safe water and high-performance commercial machines. Your clothes are washed with care — not just cleaned, but protected — using gentle cycles, quality detergents, and temperature control that preserves fabric life and color. It’s just like a premium hand wash, only better and faster.`}
         image={`https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/eb0541c1-73f3-4ac4-475d-b4ea92183400/public`}
+        imgCSS={`object-right lg:object-top-right`}
       />
       <HowSteps serviceSteps={weWashSteps} />
       <PriceList products={wetWashingList} />

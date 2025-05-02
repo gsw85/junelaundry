@@ -51,6 +51,7 @@ export default function ZDryClean() {
           "Unlike conventional wet washing that uses water and detergent, dry cleaning uses a special solvent to gently clean fabrics without water. This method is ideal for delicate, structured, or sensitive materials like wool, silk, suits, or embellished garments that may shrink, fade, or lose shape in regular washing. Dry cleaning offers a deeper clean with less stress on the fabric — ensuring your items stay looking newer, longer."
         }
         image={`https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/b1a2cfb9-abae-4317-268c-86d6458b5a00/public`}
+        imgCSS={`object-center lg:object-center`}
       />
       <HowSteps serviceSteps={dryCleanSteps} />
       <PriceList products={dryCleanList} />
