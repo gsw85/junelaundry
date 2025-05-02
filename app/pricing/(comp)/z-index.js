@@ -20,8 +20,9 @@ export default function Main() {
       servicesArr[0];
 
     setSelectedService(searchServices);
+    window.scrollTo(0, 0);
     setPageLoaded(true);
-  }, [getServices]);
+  }, [getServices, selectedService]);
 
   const props = { selectedService, setSelectedService };
 

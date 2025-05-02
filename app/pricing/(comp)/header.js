@@ -10,9 +10,6 @@ import debounce from "lodash.debounce";
 import Link from "next/link";
 
 export default function Header({ props }) {
-  const searchParam = useSearchParams();
-  const getServices = searchParam.get("services");
-
   const { selectedService, setSelectedService } = props;
   const scrollRef = useRef(null); // Reference to the ul element
 
