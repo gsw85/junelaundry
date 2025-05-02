@@ -5,6 +5,7 @@ import { PiMagnifyingGlassLight, PiWashingMachine } from "react-icons/pi";
 import { MdCallSplit, MdOutlineDryCleaning } from "react-icons/md";
 import { RiShirtLine } from "react-icons/ri";
 import PriceList from "@/app/pricing/(comp)/price-list";
+import { wetWashingList } from "@/app/pricing/(comp)/(wet-washing)/z-wash-list";
 
 const weWashSteps = [
   {
@@ -75,6 +76,14 @@ export default function ZWetWash() {
               Wash & Fold is the perfect service to use if you want to avoid
               doing laundry and save your time and your sanity.
             </p>
+            <p className={`mt-3 text-gray-500 font-normal`}>
+              We offer professional wet wash using clean, fabric-safe water and
+              high-performance commercial machines. Your clothes are washed with
+              care — not just cleaned, but protected — using gentle cycles,
+              quality detergents, and temperature control that preserves fabric
+              life and color. It’s just like a premium hand wash, only better
+              and faster.
+            </p>
             <div className="mt-10 flex items-center gap-x-6">
               <Link
                 href="#pricing"
@@ -100,7 +109,7 @@ export default function ZWetWash() {
         </div>
       </div>
       <HowSteps serviceSteps={weWashSteps} />
-      <PriceList />
+      <PriceList products={wetWashingList} />
     </>
   );
 }
