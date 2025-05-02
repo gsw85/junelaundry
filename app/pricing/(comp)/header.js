@@ -9,11 +9,11 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 import debounce from "lodash.debounce";
 import Link from "next/link";
 
-export default function Header() {
+export default function Header({ props }) {
   const searchParam = useSearchParams();
   const getServices = searchParam.get("services");
 
-  const [selectedService, setSelectedService] = useState(servicesArr[0]);
+  const { selectedService, setSelectedService } = props;
   const scrollRef = useRef(null); // Reference to the ul element
 
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -27,14 +27,6 @@ export default function Header() {
       setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 1); // Subtract 1 to account for rounding
     }
   };
-
-  useEffect(() => {
-    const searchServices =
-      servicesArr.find((service) => service.param === getServices) ||
-      servicesArr[0];
-
-    setSelectedService(searchServices);
-  }, [getServices]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;

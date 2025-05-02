@@ -1,46 +1,48 @@
 import Link from "next/link";
 import { urlConvert } from "@/util/img-fire-convert";
 import HowSteps from "@/app/pricing/(comp)/how-steps";
-import { PiMagnifyingGlassLight, PiWashingMachine } from "react-icons/pi";
-import { MdCallSplit, MdOutlineDryCleaning } from "react-icons/md";
-import { RiShirtLine } from "react-icons/ri";
+import { PiMagnifyingGlassLight } from "react-icons/pi";
+import { TbWashDry1 } from "react-icons/tb";
+import { IoPricetagsOutline } from "react-icons/io5";
+import { FcInspection } from "react-icons/fc";
+import { GiHanger } from "react-icons/gi";
 import PriceList from "@/app/pricing/(comp)/price-list";
-import { wetWashingList } from "@/app/pricing/(comp)/(wet-washing)/z-wash-list";
+import { dryCleanList } from "./z-dry-clean-list";
 
-const weWashSteps = [
+const dryCleanSteps = [
   {
     icon: PiMagnifyingGlassLight,
     name: "Inspect",
     detail:
-      "We do pocket inspections for you, ensuring nothing ends up in the wash that shouldn’t. Every pocket and garment is checked before washing.",
+      "Each garment is carefully checked for stains, fabric type, and special care instructions before cleaning begins.",
   },
   {
-    icon: MdCallSplit,
-    name: "Sort",
+    icon: IoPricetagsOutline,
+    name: "Tag & Sort",
     detail:
-      "Lights and darks are separated, and all clothes are washed in cold water to protect colors and fabric quality.",
+      "Items are tagged and sorted by material and cleaning method to ensure the right treatment for every piece.",
   },
   {
-    icon: PiWashingMachine,
-    name: "Wash",
+    icon: TbWashDry1,
+    name: "Dry Clean",
     detail:
-      "We use high-performance machines and the right detergent for your clothes. Every load is washed with care based on fabric type and soil level.",
+      "We use gentle, water-free solvents that remove dirt and stains without damaging delicate fabrics or altering their shape.",
   },
   {
-    icon: MdOutlineDryCleaning,
-    name: "Dry",
+    icon: GiHanger,
+    name: "Press & Finish",
     detail:
-      "Big items like comforters and curtains are hang-dried to avoid heat damage. Others are tumble-dried at the right temperature to ensure they're fully dry and safe.",
+      "After cleaning, garments are professionally pressed or steamed to restore their crisp, polished look.",
   },
   {
-    icon: RiShirtLine,
-    name: "Fold",
+    icon: FcInspection,
+    name: "Final Check",
     detail:
-      "Every piece is neatly folded and packed, ready for your closet. Shirts, pants, and even socks are folded with care to keep your laundry looking fresh.",
+      "Every item goes through a final quality check before being returned to you neatly pressed and on a hanger.",
   },
 ];
 
-export default function ZWetWash() {
+export default function ZDryClean() {
   return (
     <>
       <div className="relative isolate overflow-hidden bg-white">
@@ -70,19 +72,20 @@ export default function ZWetWash() {
         <div className="mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:px-8 lg:py-32">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:shrink-0 lg:pt-8">
             <h2 className="mt-10 text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-7xl">
-              Wash, Dry and Fold
+              Dry Cleaning and Special Care
             </h2>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-              Wash & Fold is the perfect service to use if you want to avoid
-              doing laundry and save your time and your sanity.
+              For delicate or specialty garments that need expert care — cleaned
+              and returned pressed on a hanger.
             </p>
             <p className={`mt-3 text-gray-500 font-normal`}>
-              We offer professional wet wash using clean, fabric-safe water and
-              high-performance commercial machines. Your clothes are washed with
-              care — not just cleaned, but protected — using gentle cycles,
-              quality detergents, and temperature control that preserves fabric
-              life and color. It’s just like a premium hand wash, only better
-              and faster.
+              Unlike conventional wet washing that uses water and detergent, dry
+              cleaning uses a special solvent to gently clean fabrics without
+              water. This method is ideal for delicate, structured, or sensitive
+              materials like wool, silk, suits, or embellished garments that may
+              shrink, fade, or lose shape in regular washing. Dry cleaning
+              offers a deeper clean with less stress on the fabric — ensuring
+              your items stay looking newer, longer.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <Link
@@ -99,17 +102,17 @@ export default function ZWetWash() {
                 <img
                   alt="App screenshot"
                   src={urlConvert(
-                    "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/eb0541c1-73f3-4ac4-475d-b4ea92183400/public",
+                    "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/b1a2cfb9-abae-4317-268c-86d6458b5a00/public",
                   )}
-                  className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10 h-[600px] object-right lg:object-top-right object-cover"
+                  className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10 h-[600px] object-right lg:object-bottom-right object-cover"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <HowSteps serviceSteps={weWashSteps} />
-      <PriceList products={wetWashingList} />
+      <HowSteps serviceSteps={dryCleanSteps} />
+      <PriceList products={dryCleanList} />
     </>
   );
 }

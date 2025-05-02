@@ -107,7 +107,7 @@ export const wetWashingList = [
   {
     name: "Military / Army Uniform",
     imageSrc:
-      "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/721138e5-ae72-4991-0955-be92cd117100/S",
+      "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/deef3169-bbea-462c-a53d-e34b23191200/S",
     price: `RM 27.00 / set`,
     others: "",
   },

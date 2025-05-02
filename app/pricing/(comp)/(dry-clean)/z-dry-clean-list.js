@@ -1,4 +1,4 @@
-export const wetWashingList = [
+export const dryCleanList = [
   {
     name: "Wash, Dry and Fold",
     imageSrc:
