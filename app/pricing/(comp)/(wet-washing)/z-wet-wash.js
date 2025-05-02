@@ -4,6 +4,7 @@ import HowSteps from "@/app/pricing/(comp)/how-steps";
 import { PiMagnifyingGlassLight, PiWashingMachine } from "react-icons/pi";
 import { MdCallSplit, MdOutlineDryCleaning } from "react-icons/md";
 import { RiShirtLine } from "react-icons/ri";
+import PriceList from "@/app/pricing/(comp)/price-list";
 
 const weWashSteps = [
   {
@@ -76,7 +77,7 @@ export default function ZWetWash() {
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <Link
-                href="#"
+                href="#pricing"
                 className="rounded-md bg-gray-50 px-3.5 py-2.5 text-sm font-semibold  hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-black border border-black shadow"
               >
                 View Pricing
@@ -91,7 +92,7 @@ export default function ZWetWash() {
                   src={urlConvert(
                     "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/eb0541c1-73f3-4ac4-475d-b4ea92183400/public",
                   )}
-                  className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10 h-[600px] object-right lg:object-top object-cover"
+                  className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10 h-[600px] object-right lg:object-top-right object-cover"
                 />
               </div>
             </div>
@@ -99,6 +100,7 @@ export default function ZWetWash() {
         </div>
       </div>
       <HowSteps serviceSteps={weWashSteps} />
+      <PriceList />
     </>
   );
 }
