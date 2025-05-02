@@ -6,9 +6,7 @@ import { servicesArr } from "../(constant)/services";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShowContent } from "@/components/common";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
-
 import debounce from "lodash.debounce";
-
 import Link from "next/link";
 
 export default function Header() {
