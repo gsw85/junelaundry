@@ -381,7 +381,7 @@ export const dryCleanList = [
     name: "Saree Manik",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/ad18a048-edbe-4ec8-bf10-84d6c78e1900/S",
-    price: `RM 14.00 / piece`,
+    price: `RM 20.00 / piece`,
     others: "",
   },
   {
