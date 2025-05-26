@@ -524,4 +524,18 @@ export const dryCleanList = [
     price: `From RM 65 / piece`,
     others: "",
   },
+  {
+    name: "Bachelor Graduation Gown",
+    imageSrc:
+      "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/f83f7b0e-804a-4579-046c-62c99d43ab00/S",
+    price: `RM 18 / set`,
+    others: "With Hat + RM 3",
+  },
+  {
+    name: "Doctoral Graduation Gown",
+    imageSrc:
+      "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/caeef05a-f7ed-40fa-de9b-367119ec4300/S",
+    price: `RM 35 / set`,
+    others: "With Hat + RM 3",
+  },
 ];
