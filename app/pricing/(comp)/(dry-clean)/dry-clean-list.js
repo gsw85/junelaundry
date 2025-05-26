@@ -406,6 +406,20 @@ export const dryCleanList = [
     others: "2 pieces + RM 0 , 3 pieces + RM 3",
   },
   {
+    name: "Punjabi Top - Shirt (Men)",
+    imageSrc:
+      "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/54d5478f-ed5c-4c38-c8d1-9222575c2c00/S",
+    price: `RM 15.00 / piece`,
+    others: "",
+  },
+  {
+    name: "Sherwani / Shirt with Metallic Embroidery",
+    imageSrc:
+      "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/04cbf395-5b61-40c9-8c4d-69259e581100/S",
+    price: `RM 18.00 / piece`,
+    others: "",
+  },
+  {
     name: "Veshti / vēṭṭi",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/a4fe140d-adf5-425d-54be-f4b7caad3b00/S",
