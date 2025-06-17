@@ -91,9 +91,9 @@ export const wetWashingList = [
     others: "",
   },
   {
-    name: "Table Cloth",
+    name: "Table Cloth / Cloth",
     imageSrc:
-      "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/738f0505-3ea7-4aa2-c7f9-efc807da2900/S",
+      "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/2067dbd0-aa11-43f7-4ffc-474be2bcb600/S",
     price: `RM 8.00 / kg`,
     others: "",
   },
