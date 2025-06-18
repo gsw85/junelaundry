@@ -118,4 +118,11 @@ export const wetWashingList = [
     price: `RM 27.00 / set`,
     others: "",
   },
+  {
+    name: "Lab Coat",
+    imageSrc:
+      "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/2d012f02-e97c-4135-3fca-814d9883f900/S",
+    price: `RM 15.00 / pc`,
+    others: "",
+  },
 ];
