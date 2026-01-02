@@ -360,7 +360,7 @@ export const dryCleanList = [
     name: "Saree",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/efc1447d-38c1-4859-ac4d-92007066b900/S",
-    price: `RM 12.00 / piece`,
+    price: `RM 15.00 / piece`,
     others: "",
   },
   {
@@ -368,20 +368,20 @@ export const dryCleanList = [
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/82eb64f2-88df-43b0-61f6-eb8608d1cd00/S",
     price: `RM 8.00 / piece`,
-    others: "",
+    others: "+RM2 for Manik",
   },
   {
     name: "Saree Scarf",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/e9cb9ea8-94a5-4421-2dc5-4d5d1fe90b00/S",
     price: `RM 10.00 / piece`,
-    others: "",
+    others: "+RM2 for Manik",
   },
   {
     name: "Saree Manik",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/ad18a048-edbe-4ec8-bf10-84d6c78e1900/S",
-    price: `RM 20.00 / piece`,
+    price: `RM 25.00 / piece`,
     others: "",
   },
   {
@@ -389,21 +389,34 @@ export const dryCleanList = [
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/db7a5320-995d-478c-4097-6a6b2477e700/S",
     price: `RM 25.00 / set`,
-    others: "2 pieces + RM 0 , 3 pieces + RM 3",
+    others: (
+      <>
+        2 pieces + RM 0 , <br />3 pieces + RM 3 , <br />
+        +RM5 for Manik .
+      </>
+    ),
   },
   {
     name: "Lehenga",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/17e9a5f3-48d0-4f81-4fe2-fb41cca1ad00/S",
-    price: `RM 25.00 / set`,
-    others: "2 pieces + RM 0 , 3 pieces + RM 3",
+    price: `RM 30.00 / set`,
+    others: (
+      <>
+        2 pieces + RM 0 ,<br />3 pieces + RM 3 .
+      </>
+    ),
   },
   {
     name: "Punjabi Suit (Men)",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/eb1f95a9-d95e-411e-b520-2d4a3bcc1000/S",
     price: `RM 23.00 / set`,
-    others: "2 pieces + RM 0 , 3 pieces + RM 3",
+    others: (
+      <>
+        2 pieces + RM 0 ,<br />3 pieces + RM 3 .
+      </>
+    ),
   },
   {
     name: "Punjabi Top - Shirt (Men)",
@@ -438,14 +451,19 @@ export const dryCleanList = [
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/5c39fdac-12d3-439e-365f-84bd7f09bc00/S",
     price: `RM 20.00 / set`,
-    others: "2 pieces + RM 0 , 3 pieces + RM 3",
+    others: (
+      <>
+        2 pieces + RM 0 ,<br />3 pieces + RM 3 ,<br />
+        Manik + RM 5.
+      </>
+    ),
   },
   {
     name: "Baju Kurung - Top Only",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/22a48422-3e32-4ed9-6dd3-d60858f49000/S",
     price: `RM 14.00 / piece`,
-    others: "",
+    others: "Manik + RM 3",
   },
   {
     name: "Baju Kurung - Bottom Only",
@@ -459,7 +477,11 @@ export const dryCleanList = [
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/c5227a3e-50df-4d26-1a01-99feaf914500/S",
     price: `RM 22.00 / piece`,
-    others: "2 pieces + RM 0 , 3 pieces + RM 3",
+    others: (
+      <>
+        2 pieces + RM 0 ,<br />3 pieces + RM 3 .
+      </>
+    ),
   },
   {
     name: "Baju Kebaya - Top only",
@@ -480,28 +502,44 @@ export const dryCleanList = [
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/475d2526-70ec-4d0c-8483-b6e3d74afc00/S",
     price: `RM 20.00 / set`,
-    others: "2 pieces + RM 0 , 3 pieces + RM 3",
+    others: (
+      <>
+        2 pieces + RM 0 ,<br />3 pieces + RM 3 .
+      </>
+    ),
   },
   {
     name: "Jubah - Male",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/45fc1eda-844e-479a-f810-64561f051100/S",
     price: `RM 18.00 / set`,
-    others: "2 pieces + RM 0 , 3 pieces + RM 3",
+    others: (
+      <>
+        2 pieces + RM 0 ,<br /> 3 pieces + RM 3 .
+      </>
+    ),
   },
   {
     name: "Jubah / Abaya - Female",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/44e44b5f-d3ee-40c4-5054-57f55133e100/S",
     price: `RM 20.00 / set`,
-    others: "2 pieces + RM 0 , 3 pieces + RM 3",
+    others: (
+      <>
+        2 pieces + RM 0 , <br />3 pieces + RM 3 , <br /> Manik + RM 5 .
+      </>
+    ),
   },
   {
     name: "Telekung",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/6904308d-6941-49eb-b279-03ba997ca000/S",
     price: `RM 20.00 / set`,
-    others: "2 pieces + RM 0 , 3 pieces + RM 3",
+    others: (
+      <>
+        2 pieces + RM 0 ,<br />3 pieces + RM 3 .
+      </>
+    ),
   },
   {
     name: "Cheongsam / 旗袍 / 長袍",

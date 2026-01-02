@@ -59,14 +59,14 @@ export const wetWashingList = [
     name: "Comforter - S",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/86f7af4f-9076-4140-39cd-96d5318dc900/S",
-    price: `RM 13.00 / pc`,
+    price: `RM 14.00 / pc`,
     others: "",
   },
   {
     name: "Comforter - Q,K",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/9cfad004-1ee0-4f0f-f4de-e8338e903500/S",
-    price: `RM 14.00 / pc`,
+    price: `RM 15.00 / pc`,
     others: "",
   },
   {
@@ -91,6 +91,12 @@ export const wetWashingList = [
     others: "",
   },
   {
+    name: "Carpet",
+    imageSrc: "https://s3.junelaundry.com/wet-wash/Carpet-Custom.jpg",
+    price: `RM 15.00 / kg`,
+    others: "",
+  },
+  {
     name: "Table Cloth / Apron",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/2067dbd0-aa11-43f7-4ffc-474be2bcb600/S",
@@ -101,6 +107,18 @@ export const wetWashingList = [
     name: "Cushion Cover",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/7711c75c-534d-4ee6-ed6a-58dc39f23f00/S",
+    price: `RM 8.00 / kg`,
+    others: "",
+  },
+  {
+    name: "Curtain - Inner Layer",
+    imageSrc: "https://s3.junelaundry.com/wet-wash/curtain-inner-layer.jpg",
+    price: `RM 12.00 / kg`,
+    others: "",
+  },
+  {
+    name: "Curtain - Outer Layer",
+    imageSrc: "https://s3.junelaundry.com/wet-wash/curtain-outer-layer.jpg",
     price: `RM 8.00 / kg`,
     others: "",
   },
