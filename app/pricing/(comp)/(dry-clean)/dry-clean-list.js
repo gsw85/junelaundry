@@ -171,7 +171,7 @@ export const dryCleanList = [
     name: "Leather Jacket",
     imageSrc:
       "https://imagedelivery.net/_rcIVT3taNSHudAfnOfnXg/bce8c3c2-b3a2-443e-9c26-9d71a126b800/S",
-    price: `RM 18.00 / piece`,
+    price: `RM 20.00 / piece`,
     others: "",
   },
   {

@@ -93,7 +93,7 @@ export const wetWashingList = [
   {
     name: "Carpet",
     imageSrc: "https://s3.junelaundry.com/wet-wash/Carpet-Custom.jpg",
-    price: `RM 15.00 / kg`,
+    price: `RM 10.00 / kg`,
     others: "",
   },
   {
