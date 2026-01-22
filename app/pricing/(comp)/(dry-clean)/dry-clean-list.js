@@ -590,4 +590,22 @@ export const dryCleanList = [
     price: `RM 35 / set`,
     others: "With Hat + RM 3",
   },
+  {
+    name: "Comforter - S",
+    imageSrc: "https://s3.junelaundry.com/dryclean/Comforter_S.jpg",
+    price: `RM 30 / piece`,
+    others: "",
+  },
+  {
+    name: "Comforter - Q",
+    imageSrc: "https://s3.junelaundry.com/dryclean/Comforter_Q.png",
+    price: `RM 40 / piece`,
+    others: "",
+  },
+  {
+    name: "Comforter - K",
+    imageSrc: "https://s3.junelaundry.com/dryclean/Comforter_K.jpg",
+    price: `RM 50 / piece`,
+    others: "",
+  },
 ];
